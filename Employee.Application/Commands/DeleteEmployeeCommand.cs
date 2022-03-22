@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Employee.Application.Commands
 {
-    public class CreateEmployeeCommand : IRequest<EmployeeResponse> 
+    public class DeleteEmployeeCommand : IRequest<EmployeeResponse> 
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

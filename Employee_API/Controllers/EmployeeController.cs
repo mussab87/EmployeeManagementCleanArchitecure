@@ -35,5 +35,13 @@ namespace Employee_API.Controllers
             var result = await _mediator.Send(command);
             return Ok(result);
         }
+
+        [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<EmployeeResponse>> Delete([FromBody] DeleteEmployeeCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Ok(result);
+        }
     }
 }
